@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>обо мне</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        header{
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(108.91deg, #abab09 3.10%,#cfbf11 92.46%);
+            padding-top: 100px;
+            box-sizing: border-box;
+        }
+        h1{
+            font-size: 30px;
+            color: yellow;
+            text-align: center;
+            text-shadow: 1px 1px 3px black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .frr{
+            width: 50px;
+            height: 50px;
+            margin-top: 100px;
+            margin-left: 100px;
+        }
+        .frr button{
+            width: 100%;
+            height: 100%;
+            background: none;
+            border: none;
+        }
+        section{
+            background: linear-gradient(108.91deg, #abab09 3.10%,#cfbf11 92.46%);
+            width: 100%;
+            height: 100vh;
+            padding-top: 50px;
+            box-sizing: border-box;
+            display: none;
+        }
+        .about{
+            width: 100%;
+            height: 100%;
+        }
+        .about p{
+            font-size: 18px;
+            color: #585858;
+        }
+        .about span{
+            font-size: 20px;
+            color: black;
+            text-shadow: 1px 1px 3px #585858;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ничего нету о Фарруха...</h1>
+        <div class="frr">
+            <button ></button>
+        </div>
+        
+    </header>
+    
+    <section>
+        <div class="about">
+            <p>name: </p> <span>Farrux Uroqov</span> 
+            <p>school: </p> <span>248-school</span>
+            <p>living: </p> <span>ttz-1, 26-35</span>
+            <p>phone nomer</p> <span>+998 93 159 1929</span>
+            <p>card nomer</p> <span> 9860 3501 0968 4323</span>
+            <p>data birthday</p> <span>04 September, 2003</span>
+            <p>job</p> <span>coder</span>
+            <p>born in</p> <span>Samarkand, Uzbekistan</span>
+        </div>
+    </section>
+
+    <script>
+       
+        let btn = document.querySelector('button');
+        let header = document.querySelector('header');
+        let section = document.querySelector('section');
+
+        btn.onclick = function(){
+            header.style.display = "none";
+            section.style.display = "block";
+        }
+
+
+        
+    </script>
+</body>
+</html>
